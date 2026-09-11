@@ -1,26 +1,42 @@
 # spaGFM reproducibility repository
 
-This repository contains the code, workflows, and plotting scripts used to reproduce spaGFM analyses and related evaluations. The project is organized by figure and analysis module, with each directory containing the scripts, notebooks, and shell commands needed to reproduce a specific result or study component.
+This repository contains the scripts, notebooks, and workflows used to reproduce
+the spaGFM analyses and evaluations.
 
-The structure is designed for transparency and extensibility: major figures are grouped into separate folders, and subfolders further organize experiments by setting or task.
+## Contents
+
+- figure 1: Pre-training data distribution and embedding visualizations.
+- figure 2: Zero-shot evaluation of spaGFM across tissues and the associated plots.
+- figure 3: TLS prediction case study.
+- figure 4: Perturbation analysis case study using Perturb-Fish.
+- figure 5: Glomerular prediction case study in kidney tissue.
 
 ## Repository layout
 
-The project is organized in a simple figure-based structure:
-
 ```text
 spaGFM_reproducibility/
+├── LICENSE
+├── README.md
 ├── figure1/
 ├── figure2/
 │   ├── figure2a/
+│   │   ├── cortex/
+│   │   ├── liver/
+│   │   ├── lung/
+│   │   └── figure2a_plot.ipynb
 │   ├── figure2b/
+│   │   ├── cortex/
+│   │   ├── liver/
+│   │   ├── lung/
+│   │   └── figure2b_plot.ipynb
 │   ├── figure2c/
 │   └── figure2d/
 ├── figure3/
-└── ...
+│   ├── figure3b/
+│   ├── figure3d/
+│   └── figure3a.py, figure3c.py, figure3e.py–figure3k.py
+├── figure4/
+│   └── figure4b.py–figure4f.py
+└── figure5/
+    └── figure5b.py–figure5f.py
 ```
-
-In this layout:
-
-- Each top-level folder such as `figure1/`, `figure2/`, or `figure3/` corresponds to a major figure or analysis block.
-- Subfolders like `figure2a/`, `figure2b/`, and `figure2d/` represent different parts or views within that figure.
